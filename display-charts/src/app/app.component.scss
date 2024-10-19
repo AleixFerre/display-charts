@@ -1,3 +1,21 @@
+.title {
+  margin-left: 1rem;
+}
+
 .demo-chart {
   height: 500px;
+}
+
+$margin: 7vw;
+
+.slider {
+  display: flex;
+  margin: 0 $margin;
+  width: calc(100dvw - ($margin * 2));
+  align-items: center;
+  justify-content: center;
+
+  .input {
+    flex: 1;
+  }
 }

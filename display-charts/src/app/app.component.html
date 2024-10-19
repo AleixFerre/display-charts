@@ -1,1 +1,16 @@
+<h1 class="title">Percentatge de numeros divisibles per cada numero</h1>
+
 <div echarts [options]="chartOption" class="demo-chart"></div>
+
+<div class="slider">
+  <input
+    #slider
+    class="input"
+    type="range"
+    min="10"
+    max="10000"
+    [value]="limit"
+    (input)="changeLimit($event)"
+  />
+  <span> {{ slider.value }} </span>
+</div>
