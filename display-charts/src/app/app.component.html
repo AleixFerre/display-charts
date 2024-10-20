@@ -1,4 +1,7 @@
 <h1 class="title">Percentatge de numeros divisibles per cada numero</h1>
+<h1 class="title">
+  Probabilitat de que dos numeros aleatòris dins del rang 1-n siguin divisibles
+</h1>
 
 <div echarts [options]="chartOption" class="demo-chart"></div>
 
@@ -8,7 +11,7 @@
     class="input"
     type="range"
     min="10"
-    max="10000"
+    [max]="numbers.length"
     [value]="limit"
     (input)="changeLimit($event)"
   />
